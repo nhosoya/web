@@ -34,8 +34,8 @@ return array(
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',
-			'database' => 'homestead',
-			'username' => 'homestead',
+			'database' => 'coaching-mock',
+			'username' => 'coaching_mock',
 			'password' => 'secret',
 			'charset'  => 'utf8',
 			'prefix'   => '',
