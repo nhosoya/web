@@ -6,4 +6,4 @@
 	</div>
 </div>
 <script src="https://code.jquery.com/jquery.js"></script>
-{{ HTML::script('tbs/js/bootstrap.min.js') }}
+{{ HTML::script('bootstrap/js/bootstrap.min.js') }}
