@@ -1,7 +1,7 @@
 <div id="footer">
 	<div class="container">
 		<p class="text-muted">
-			Powered by Hosokawa Art Online.
+			Powered by Spologics.
 		</p>
 	</div>
 </div>
