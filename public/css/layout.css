@@ -33,6 +33,7 @@ body {
 }
 
 .comment-avator {
+	min-width: 50px;
 }
 
 .comment-form-button {
