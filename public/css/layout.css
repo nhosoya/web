@@ -11,40 +11,60 @@ body {
 	border: 1px solid #dddddd;
 }
 
-.comment_header {
+.comment-header {
 	border-bottom: 1px solid #dddddd;
     background-color: #f2f8fa;
 }
 
-.comment_header_text {
+.comment-header-text {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 10px;
 }
 
-.comment_content {
+.comment-content {
 	min-height: 60px;
 }
 
-.comment_context_text {
+.comment-context-text {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 10px;
 }
 
-.comment_avator {
-	min-width: 70px;
+.comment-avator {
+	min-width: 60px;
 }
 
-.comment_form_button {
+.comment-form-button {
 	text-align: right;
 	padding-top: 5px;
 }
 
-.comment_form_content {
+.comment-form-content {
 	padding: 5px;
 }
 
-.social_icon {
+.social-icon {
 	max-width: 50px
+}
+
+.video-wrap {
+  position: relative;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  padding-top: 69px;
+  padding-bottom: 50%;
+  overflow: hidden;
+}
+.video-wrap video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.information-box {
+	padding-bottom: 10px;
+	color: #8e9597;
 }
