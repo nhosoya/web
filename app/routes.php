@@ -14,14 +14,16 @@
 Route::get('/', function()
 {
 	// return View::make('hello');
-	return View::make('lesson');
+	$sports = DB::table('sports')->orderBy('name', 'asc')->get();
+	return View::make('lesson')->with('sports', $sports);
 });
 
 Route::get('users', function()
 {
 	$users = User::all();
- 
-    return View::make('users')->with('users', $users);
+ 	$sports = DB::table('sports')->orderBy('name', 'asc')->get();
+ 	
+    return View::make('users')->with('users', $users)->with('sports', $sports);
 });
 
 Route::get('environment', function()

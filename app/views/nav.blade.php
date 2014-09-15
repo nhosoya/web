@@ -18,10 +18,9 @@
 						Handball <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Ice Hockey</a></li>
-						<li><a href="#">American Football</a></li>
-						<li><a href="#">Baseball</a></li>
-						<li><a href="#">Sepak Takraw</a></li>
+						@foreach($sports as $sport)
+        					<li><a>{{ $sport->name }}</a></li>
+    					@endforeach
 					</ul>
 				<li><a href="#menu">Menu</a></li>
 				<li><a href="#coach">Coach</a></li>
