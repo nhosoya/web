@@ -18,13 +18,7 @@ Route::get('/', function()
 	return View::make('lesson')->with('sports', $sports);
 });
 
-Route::get('users', function()
-{
-	$users = User::all();
- 	$sports = DB::table('sports')->orderBy('name', 'asc')->get();
- 	
-    return View::make('users')->with('users', $users)->with('sports', $sports);
-});
+Route::resource('user', 'UserController');
 
 Route::get('environment', function()
 {

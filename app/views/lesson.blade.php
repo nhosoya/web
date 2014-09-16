@@ -117,7 +117,7 @@ function setCurrentTime(time) {
 			</div>
 			<div class="information-box">
 				<div class="informatin-label">
-					<strong>Sex</strong>
+					<strong>Gender</strong>
 				</div>
 				<div class="information-content">
 					male

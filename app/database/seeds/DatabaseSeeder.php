@@ -24,10 +24,10 @@ class UserTableSeeder extends Seeder {
     {
         DB::table('users')->delete();
  
-        User::create(array('email' => 'foo@bar.com', 'name' => 'foo', 'birth' => '1990/08/30', 'sex' => '0', 'nationality' => 'Canada'));
+        User::create(array('email' => 'foo@bar.com', 'name' => 'foo', 'birth' => '1990/08/30', 'gender' => '0', 'nationality' => 'Canada'));
         User::create(array('email' => 'hoge@hage.com', 'name' => 'hoge'));
         User::create(array('email' => 'coach@example.com', 'name' => 'coach'));
-        User::create(array('email' => 'hosokawa@example.com', 'name' => 'hosokawa', 'birth' => '1987/03/17', 'sex' => '0', 'nationality' => 'Japan', 'coach' => '1'));
+        User::create(array('email' => 'hosokawa@example.com', 'name' => 'hosokawa', 'birth' => '1987/03/17', 'gender' => '0', 'nationality' => 'Japan', 'coach' => '1'));
     }
  
 }
