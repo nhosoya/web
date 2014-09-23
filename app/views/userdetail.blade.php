@@ -44,6 +44,9 @@
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-8">
 			activity
+			<div>
+				<a href="/user" class="btn btn-success">user list</a>
+			</div>
 			<div class="btn-coach">
 				@if ($user->coach === 1)
 					<button type="button" class="btn btn-success btn-lg">Coach</button>

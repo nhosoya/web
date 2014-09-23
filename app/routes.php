@@ -12,6 +12,7 @@
 */
 
 Route::when('/', 'auth');
+Route::when('user', 'auth');
 
 Route::resource('login', 'LoginController');
 
@@ -22,9 +23,7 @@ Route::get('/logout', function(){
 
 Route::get('/', function()
 {
-	// return View::make('hello');
-	$sports = DB::table('sports')->orderBy('name', 'asc')->get();
-	return View::make('lesson')->with('sports', $sports);
+	return View::make('lesson');
 });
 
 Route::resource('user', 'UserController');

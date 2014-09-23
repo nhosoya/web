@@ -1,3 +1,6 @@
+@extends('toplayout')
+
+@section('content')
 @if ( Auth::guest() )
 
 	{{ Form::open() }}
@@ -17,10 +20,20 @@
 			{{ Form::password('password') }}
 		</p>
 		<p>
+			{{ Form::checkbox('remember', '1') }}
+			{{ Form::label('remember', 'remember me') }}
+		</p>
+		<p>
 			{{ Form::submit('login') }}
 		</p>
 	{{ Form::close() }}
 
+	<div>
+		<a href="/user/create" class="btn btn-default">sign up</a>
+	</div>
+
 @else
 	ログイン済みです
 @endif
+
+@stop

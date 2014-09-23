@@ -1,6 +1,14 @@
 <?php
 
-class loginController extends \BaseController {
+class loginController extends BaseController {
+
+	/**
+     * Instantiate a new LoginController instance.
+     */
+    public function __construct()
+    {
+        $this->beforeFilter('csrf', array('on' => 'post'));
+    }
 
 	/**
 	 * Display a listing of the resource.
@@ -20,8 +28,9 @@ class loginController extends \BaseController {
 	 */
 	public function store()
 	{
+		$remember = (bool)Input::get('remember');
 		$inputs = Input::only(array('email', 'password'));
-		if ( Auth::attempt($inputs) ) {
+		if ( Auth::attempt($inputs, $remember) ) {
 			return Redirect::to('/');
 		} else {
 			return Redirect::back()->withInput();
