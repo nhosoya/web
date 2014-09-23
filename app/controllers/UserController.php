@@ -10,8 +10,8 @@ class UserController extends BaseController {
 	public function index()
 	{
 		$users = User::all();
-		$sports = Sport::getAllSports();
-		return View::make('users')->with('users', $users)->with('sports', $sports);
+		$view = View::make('users')->with('users', $users);
+		return $view;
 	}
 
 
@@ -45,7 +45,8 @@ class UserController extends BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		$user = User::find($id);
+		return View::make('userdetail')->with('user', $user);
 	}
 
 

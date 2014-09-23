@@ -28,6 +28,7 @@ class UserTableSeeder extends Seeder {
         User::create(array('email' => 'hoge@hage.com', 'name' => 'hoge'));
         User::create(array('email' => 'coach@example.com', 'name' => 'coach'));
         User::create(array('email' => 'hosokawa@example.com', 'name' => 'hosokawa', 'birth' => '1987/03/17', 'gender' => '0', 'nationality' => 'Japan', 'coach' => '1'));
+        User::create(array('email' => 'takeyama@example.com', 'name' => 'Naoto Takeyama', 'birth' => '1987/07/21', 'gender' => '0', 'nationality' => 'Japan', 'coach' => '1'));
     }
  
 }

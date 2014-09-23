@@ -9,7 +9,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">Spologics</a>
+			<a class="navbar-brand" href="/">Spologics</a>
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav navbar-right">
@@ -23,6 +23,7 @@
     					@endforeach
 					</ul>
 				<li><a href="#menu">Menu</a></li>
+				<li><a href="/user">User</a></li>
 				<li><a href="#coach">Coach</a></li>
 				<li><a href="#lesson">Lesson</a></li>
 				<li><a href="#profile">Profile</a></li>
