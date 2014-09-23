@@ -11,6 +11,15 @@
 |
 */
 
+Route::when('/', 'auth');
+
+Route::resource('login', 'LoginController');
+
+Route::get('/logout', function(){
+	Auth::logout();
+	return Redirect::to('/');
+});
+
 Route::get('/', function()
 {
 	// return View::make('hello');

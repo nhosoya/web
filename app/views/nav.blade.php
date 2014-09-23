@@ -27,7 +27,7 @@
 				<li><a href="#coach">Coach</a></li>
 				<li><a href="#lesson">Lesson</a></li>
 				<li><a href="#profile">Profile</a></li>
-				<li><a href="#signout">Sign out</a></li>
+				<li><a href="/logout">logout</a></li>
 			</ul>
 		</div><!--/.nav-collapse -->
 	</div>

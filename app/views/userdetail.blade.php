@@ -26,7 +26,7 @@
 						<td>
 							@if ($user->gender === 0)
 								male
-							@else
+							@elseif ($user->gender === 1)
 								female
 							@endif
 						</td>
