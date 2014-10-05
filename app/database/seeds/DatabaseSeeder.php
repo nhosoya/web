@@ -26,11 +26,11 @@ class UserTableSeeder extends Seeder {
 
         $password = Hash::make('password');
  
-        User::create(array('email' => 'foo@bar.com', 'name' => 'foo', 'birth' => '1990/08/30', 'gender' => '0', 'nationality' => 'Canada', 'password' => $password));
-        User::create(array('email' => 'hoge@hage.com', 'name' => 'hoge', 'password' => $password));
-        User::create(array('email' => 'coach@example.com', 'name' => 'coach', 'password' => $password));
-        User::create(array('email' => 'hosokawa@example.com', 'name' => 'hosokawa', 'birth' => '1987/03/17', 'gender' => '0', 'nationality' => 'Japan', 'coach' => '1', 'password' => $password));
-        User::create(array('email' => 'takeyama@example.com', 'name' => 'Naoto Takeyama', 'birth' => '1987/07/21', 'gender' => '0', 'nationality' => 'Japan', 'coach' => '1', 'password' => $password));
+        User::create(array('email' => 'foo@bar.com', 'username' => 'foo', 'birth' => '1990/08/30', 'gender' => '0', 'nationality' => 'Canada', 'password' => $password));
+        User::create(array('email' => 'hoge@hage.com', 'username' => 'hoge', 'password' => $password));
+        User::create(array('email' => 'coach@example.com', 'username' => 'coach', 'password' => $password));
+        User::create(array('email' => 'hosokawa@example.com', 'username' => 'hosokawa', 'birth' => '1987/03/17', 'gender' => '0', 'nationality' => 'Japan', 'coach' => '1', 'password' => $password));
+        User::create(array('email' => 'takeyama@example.com', 'username' => 'Naoto Takeyama', 'birth' => '1987/07/21', 'gender' => '0', 'nationality' => 'Japan', 'coach' => '1', 'password' => $password));
     }
  
 }

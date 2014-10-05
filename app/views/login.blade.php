@@ -29,7 +29,7 @@
 	{{ Form::close() }}
 
 	<div>
-		<a href="/user/create" class="btn btn-default">sign up</a>
+		<a href="/register" class="btn btn-default">sign up</a>
 	</div>
 
 @else

@@ -1,6 +1,6 @@
 <?php
 
-class loginController extends BaseController {
+class LoginController extends BaseController {
 
 	/**
      * Instantiate a new LoginController instance.

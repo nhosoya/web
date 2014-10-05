@@ -11,22 +11,29 @@
 |
 */
 
-Route::when('/', 'auth');
-Route::when('user', 'auth');
+Route::pattern('id', '[0-9]+');
+
+Route::when('*', 'csrf', ['post']);
 
 Route::resource('login', 'LoginController');
+
+Route::resource('register', 'RegisterController');
 
 Route::get('/logout', function(){
 	Auth::logout();
 	return Redirect::to('/');
 });
 
-Route::get('/', function()
+Route::group(array('before' => 'auth'), function()
 {
-	return View::make('lesson');
-});
+	Route::get('/', function()
+	{
+		return View::make('lesson');
+	});
 
-Route::resource('user', 'UserController');
+	Route::resource('user', 'UserController');
+
+});
 
 Route::get('environment', function()
 {
