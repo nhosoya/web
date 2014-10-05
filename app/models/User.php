@@ -28,6 +28,11 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
      *
      * @var array
      */
-     protected $guarded = array('id'); 
+    protected $guarded = array('id');
+
+    public function setPasswordAttribute($value)
+    {
+        $this->attributes['password'] = Hash::make($value);
+    }
 
 }
