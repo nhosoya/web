@@ -1,4 +1,4 @@
-body
+.layout
 {
     padding-top: 70px;
 }
@@ -96,4 +96,41 @@ body
 .tbody-users tr
 {
     cursor:pointer;
+}
+
+.front-bg
+{
+    position: fixed;
+}
+
+.front-card
+{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.front-image
+{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.login-form
+{
+    background-color: #fcfcfc;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.register-form
+{
+    background-color: #fcfcfc;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 10px;
 }

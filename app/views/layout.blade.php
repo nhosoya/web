@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
  	@include('header')
- 	<body>
+ 	<body class="layout">
  		@include('nav')
  		<div class="content">
  			<div class="container">

@@ -3,17 +3,6 @@
 class RegisterController extends BaseController {
 
 	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
-	public function index()
-	{
-		return View::make('signup');
-	}
-
-
-	/**
 	 * Store a newly created resource in storage.
 	 *
 	 * @return Response
@@ -29,7 +18,7 @@ class RegisterController extends BaseController {
 		$val = Validator::make($inputs, $rules);
 		if($val->fails())
 		{
-			return Redirect::to('/register')
+			return Redirect::back()
 					->withErrors($val)
 					->withInput();
 		}

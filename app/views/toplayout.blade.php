@@ -2,11 +2,6 @@
 <html lang="ja">
  	@include('header')
  	<body>
- 		<div class="content">
- 			<div class="container">
- 				@yield("content")
- 			</div>
- 		</div>
- 		@include('footer')
+		@yield("content")
  	</body>
 </html>
