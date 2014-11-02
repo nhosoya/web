@@ -34,8 +34,8 @@ return array(
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',
-			'database' => 'coaching-mock',
-			'username' => 'coaching_mock',
+			'database' => 'spologics',
+			'username' => 'spologics',
 			'password' => 'secret',
 			'charset'  => 'utf8',
 			'prefix'   => '',
