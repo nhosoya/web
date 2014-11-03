@@ -134,3 +134,16 @@
     margin: 10px;
     padding: 10px;
 }
+
+.btn-admin-create
+{
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.btn-admin-back
+{
+    float: left;
+    text-align: left;
+    margin-bottom: 10px;
+}
