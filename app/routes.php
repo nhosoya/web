@@ -42,7 +42,7 @@ Route::group(array('before' => 'admin', 'prefix' => 'admin'), function()
 		return View::make('admin');
 	});
 
-	Route::get('/user', 'UserController@index');
+	Route::resource('/user', 'AdminUserController');
 
 });
 

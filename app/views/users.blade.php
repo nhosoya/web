@@ -27,7 +27,7 @@ jQuery(function($) {
     @foreach($users as $user)
 		<tr data-href="/user/{{ $user->id }}">
 			<td>{{ $user->id }}</td>
-			<td>{{ $user->name }}</td>
+			<td>{{ $user->username }}</td>
 			<td>{{ $user->email }}</td>
 			<td>{{ $user->birth }}</td>
 			<td>{{ $user->gender }}</td>
