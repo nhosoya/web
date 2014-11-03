@@ -35,6 +35,17 @@ Route::group(array('before' => 'auth'), function()
 
 });
 
+Route::group(array('before' => 'admin', 'prefix' => 'admin'), function()
+{
+	Route::get('/', function()
+	{
+		return View::make('admin');
+	});
+
+	Route::get('/user', 'UserController@index');
+
+});
+
 Route::get('environment', function()
 {
     return App::environment();

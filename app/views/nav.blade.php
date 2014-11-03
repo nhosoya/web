@@ -27,6 +27,9 @@
 				<li><a href="#coach">Coach</a></li>
 				<li><a href="#lesson">Lesson</a></li>
 				<li><a href="#profile">Profile</a></li>
+				@if (Auth::user()->role >= 100)
+					<li><a href="/admin">Admin</a></li>
+				@endif
 				<li><a href="/logout">logout</a></li>
 			</ul>
 		</div><!--/.nav-collapse -->
